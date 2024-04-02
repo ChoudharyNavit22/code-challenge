@@ -7,9 +7,13 @@
 }
 
 header {
+  position: absolute;
+  width: 100%;
+}
+
+header div {
   background-color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
 }
 
 header .brand {
@@ -52,6 +56,7 @@ main {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+  padding-top: 45px;
 }
 
 main h1 {
@@ -110,10 +115,9 @@ button.primary {
 }
 
 footer {
+  border-top-left-radius: 30px;
   color: white;
   background-color: black;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -201,4 +205,26 @@ footer > div {
 
 .campaigns {
   padding: 2rem;
+}
+
+.campaign-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
+.campaign-tiles > div {
+  background-color: white;
+  border-radius: 12px;
+  flex: 1;
+  max-width: 33%;
+  min-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
 }

@@ -8,4 +8,5 @@ export interface Company {
   mainImage?: string;
   campaignStatus: "LIVE" | "CLOSED";
   campaignType: "EOI" | "OFFER";
+  location: string;
 }
